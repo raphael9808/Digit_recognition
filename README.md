@@ -11,7 +11,7 @@ This repository contains an implementation of a Multi-Layer Perceptron (MLP) mod
   - Fully Connected Layer with 128 units and ReLU activation
   - Fully Connected Layer with 64 units and ReLU activation
   - Output layer: Fully Connected Layer with 10 units *(for 10 classes)* and LogSoftmax activation
-  - Loss Function: Negative Log-Likelihood Loss
+  - Loss Function: Cross Entropy Loss
 
 **Optimizer**: Stochastic Gradient Descent (optim.SGD)
 
