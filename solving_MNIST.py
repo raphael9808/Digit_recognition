@@ -85,7 +85,7 @@ test_loader = DataLoader(test_data, batch_size=64, shuffle=False)
 model = MNIST()
 
 criterion = nn.NLLLoss()
-optimizer = optim.SGD(model.parameters(), lr=0.01)
+optimizer = optim.SGD(model.parameters(), model.lr)
     
 model.fit(train_loader, criterion, optimizer, epochs=5)
 model.test(test_loader, criterion)
