@@ -16,7 +16,7 @@ class Perceptron:
         self.w = None
         self.b = 0
     
-    def forward(self, X, y):
+    def fit(self, X, y):
         n_samples, n_features = X.shape
         self.w = np.zeros(n_features)
         for loop in range(self.n_iter):
@@ -64,7 +64,7 @@ print(f"Shape label : {y_train.shape}")
 # First test to classify 0 and 9
 perceptron = Perceptron(lr=0.01, n_iter=1000)
 
-perceptron.forward(X_train, y_train)
+perceptron.fit(X_train, y_train)
 
 predictions = perceptron.predict(X_train)
 print("Predictions :", predictions)
