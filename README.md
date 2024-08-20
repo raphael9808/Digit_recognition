@@ -1,3 +1,3 @@
-# Digit_recognition
+# MNIST
 
 Test de readme file
